@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;1,300&display=swap');
+
+:root{
+    --corprincipal: #07103d;
+    --corsecundaria: #16ad1b;
+    --cortitulo: #16078b;
+  }
+
+body{
+background-color: #16ad1b;
+    
+   
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Rubik", sans-serif;
+}
+ 
+.cabeçalho{ 
+    display:flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.cabeçalho h1{
+    color: var(--cortitulo);
+}
+.cabeçalho img{
+    max-width: 700px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+} 
+
