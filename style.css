@@ -34,7 +34,10 @@ header {
   padding-top: 5%;
   color: white;
   color: var(--corsecundaria);
-      
+}
+.container__input__text{
+  color: azure;
+  margin-right: 30px;
 }
 
 textarea{
@@ -110,4 +113,7 @@ border-radius: 10px;
   background-color: rgb(255, 255, 255);
   border-radius: 100px;
   padding-bottom: 0%;
+}
+.denosenvolvido{
+  color: aliceblue;
 }
