@@ -17,7 +17,7 @@
         canvas.height = window.innerHeight;
         canvas.width = window.innerWidth;
 
-        var texts = '0123456789'.split('');
+        var texts = '123456789'.split('');
         var fontSize = 16;
         var columns = canvas.width/fontSize;
         var drops = [];
@@ -47,51 +47,53 @@
 
     </script>
 
-
-    <main class="main container">
     
-      <header class="cabeçalho">
-        <img src="assets2/SHROUD Logo Design.jpeg" alt="Logo james ">
-        <h1> Mensagens Codificadas</h1>
-      </header>
+
+<main class="main container">
+    
+  <header class="cabeçalho">
+    <img src="assets2/SHROUD Logo Design.jpeg" alt="Logo james ">
+    <h1> Mensagens Codificadas</h1>
+  </header>
 
 
-      <div class="container input">
+  <!-- <h1 style="color: white;"> Digite um texto que deseja cripitografar ou descriptografa.</h1> -->
+  <div class="container__input">
         <div class="input">
-          <textarea id="input-texto" placeholder="Digite o seu texto aqui..."> </textarea>
-          <p> ATENÇÃO: Apenas letras maiusculas e sem acento.</p>
+            <textarea id="input-texto"
+                cols="30"
+                rows="10"
+                placeholder="Digite o seu texto aqui..."></textarea>
+            <p> Digite um texto que deseja cripitografar ou descriptografa.</p>
+            <p> ATENÇÃO: Apenas letras minusculas e sem acento.</p>
+             <script type="text/javascript" src="app.js"></script>
         </div>
-
+    
         <div id="output">
-          <img src="" alt="Logo">
-          <h2> Sua mensagem, aparecera aqui</h2>
-          <span> Digite um texto que deseja cripitografar ou descriptografa.</span>
-        </div>
-      </div>
-      <div class="buttons">
-        <div class="container-bnt">
-          <button class="btn-cripitografar"> Criptografar</button>
-          <button class="btn-descriptografar"> Descriptografa</button>
+            <textarea id="input-texto"
+                cols="25"
+                rows="10"
+                placeholder="Digite o seu texto aqui..."> </textarea>
+            <h2> Sua mensagem, aparecera aqui</h2>
+         </div>
+  </div>
+  <div class="buttons">
+    <div class="container-btn">
+      <button onclick="criptografar()" class="btn-cripto">CRIPTOGRAFAR</button>
+      <button onclick="descriptografar()" class="btn-descripto">DESCRIPTOGRAFAR</button>
+    </div>
+  </div>
+  <footer class="rodape">
+    <div class="container__icons">
+     <div class="icons">
+       <a href="https://github.com/JamesRSj" class="btn__gitHub"><ion-icon name="logo-github"></ion-icon></a>
+       <a href="https://www.instagram.com/_jamesjrr/"class="btn__Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+       <a href="" class="btn__Facebook"><ion-icon name="logo-Facebook"></ion-icon></a>
+    </div>
 
-        </div>
-      </div>
+  </footer>  
+</main>
 
-
-      <footer class="rodapé">
-        <div class="icons">
-          <a href=""><ion-icon name="logo-github"></ion-icon></a>
-          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-  
-  
-  
-        </div>
-      </footer>
-
-
-
-     
-    </main>
 
     <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
     <script  nomodule  src = "https://unpkg .com/ionicons@7.1.0/dist/ionicons/ionicons.js"> </script>
